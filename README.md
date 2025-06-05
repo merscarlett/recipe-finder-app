@@ -25,7 +25,25 @@ NEXT_PUBLIC_API_KEY=your_spoonacular_api_key
 
 npm run dev
 
-<pre> ```plaintext recipe-finder-app/ ├── app/ # Main application folder (App Router structure) │ ├── layout.tsx # Root layout component │ ├── global.css # Base styles │ ├── page.tsx # Homepage │ ├── recipes/ # Route segment for listing and searching recipes │ │ ├── page.tsx # RecipeListPage – renders search filters & list of results │ │ └── [id]/ # Dynamic route for recipe details │ │ └── page.tsx # RecipeDetailPage – fetches and shows full recipe details by ID │ └── page.tsx # Fallback page (optional) ├── .env.local # Environment variables (e.g., API key for Spoonacular) ├── .gitignore # Specifies intentionally untracked files to ignore ├── README.md ├── next.config.js # Next.js configuration ├── package.json # Project dependencies and scripts └── tsconfig.json # TypeScript configuration ``` </pre>
+```plaintext
+recipe-finder-app/
+├── app/                    # Main application folder (App Router structure)
+│   ├── layout.tsx          # Root layout component
+│   ├── global.css          # Base styles
+│   ├── page.tsx            # Homepage
+│   ├── recipes/            # Route segment for listing and searching recipes
+│   │   ├── page.tsx        # RecipeListPage – renders search filters & list of results
+│   │   └── [id]/           # Dynamic route for recipe details
+│   │       └── page.tsx    # RecipeDetailPage – fetches and shows full recipe details by ID
+│   └── page.tsx            # Fallback page (optional)
+├── .env.local              # Environment variables (e.g., API key for Spoonacular)
+├── .gitignore              # Specifies intentionally untracked files to ignore
+├── README.md
+├── next.config.js          # Next.js configuration
+├── package.json            # Project dependencies and scripts
+└── tsconfig.json           # TypeScript configuration
+```
+
 Home page 
 ![image](https://github.com/user-attachments/assets/70549eb5-0e45-42cd-8efe-ad77025b4be8)
 RecipeListPage
